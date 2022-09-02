@@ -116,7 +116,7 @@ Cuando hago click en el nombre del proyecto me abre un archivo XML que nos va a 
 * Console.WriteLine() -> para escribir un dato en la consola
 * Console.ReadLine() -> leer un dato por consola (produce salto de linea)
 
-### Vamos al 1er ejercicio!
+### 1er ejercicio:
 
 ```sh
 using System;
@@ -270,8 +270,6 @@ namespace ConsoleApp
 
 ### 3er ejercicio: 
 
-CONSIGNA (COMPLETAR)
-
 Reciba tres numeros enteros (hora, minutos, segundos) e indique si es un numero valido.
 
 ```sh
@@ -306,7 +304,7 @@ namespace ConsoleApp
 
 ### 1er ejercicio:
 
-CONSIGNA (COMPLETAR)
+Realizar un cuadrado de caracteres dado un valor numero ingresado por el usuario.
 
 ```sh
 using System;
@@ -331,9 +329,39 @@ namespace ConsoleApp
 }
 ```
 
+### 2do ejercicio:
+
+Realizar ahora un triángulo creciente.
+
+```sh
+
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(Environment.NewLine + "EJERCICIO B"); //TRIANGULO CRECIENTE
+
+            for (int i = 0; i < numero; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("1 ");
+                }
+                Console.Write(Environment.NewLine);
+            }
+        }
+    }
+}
+
+```
+
 ### 3er ejercicio:
 
-CONSIGNA:
+Realizar ahora un triángulo decreciente.
 
 ```sh
 using System;
@@ -361,6 +389,8 @@ namespace ConsoleApp
 
 ### 4to ejercicio:
 
+Realiza ahora un triángulo decreciente espejado.
+
 ```sh
 using System;
 
@@ -385,6 +415,37 @@ namespace ConsoleApp
 }
 ```
 
-> El resto de los ejercicios fueron resueltos en clase pero serán subidos posteriormente por Leandro
+### 5to ejercicio:
 
+Realizar una cruz.
 
+```sh
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(Environment.NewLine + "EJERCICIO F"); //CRUZ
+
+            for (int i = 0; i < numero; i++)
+            {
+                for (int j = 0; j < numero; j++)
+                {
+                    if (i == j || i == numero - j - 1)
+                    {
+                        Console.Write("1 ");
+                    }
+                    else
+                    {
+                        Console.Write("0 ");
+                    }
+                }
+                Console.Write(Environment.NewLine);
+            }
+        }
+    }
+}
+```
